@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sonam Singh — B.Tech CSE (Data Science) student portfolio. Projects in AI, web development, and data analytics. Looking for internship opportunities." />
+  <meta name="keywords"
+    content="Sonam Singh, portfolio, CSE student, data science, web developer, Python, Streamlit, Lucknow" />
+  <meta name="author" content="Sonam Singh" />
+  <meta property="og:title" content="Sonam Singh | Portfolio" />
+  <meta property="og:description"
+    content="B.Tech CSE Data Science student building real-world projects in AI, web dev, and analytics." />
+  <meta property="og:type" content="website" />
+  <title>Sonam Singh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home">
+        <span class="logo-bracket">&lt;</span>Sonam<span class="logo-dot">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#training" class="nav-link">Training</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Sonam Singh</h1>
+        <h2 class="hero-tagline">
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-intro">
+          A passionate B.Tech CSE (Data Science) student building practical projects in
+          <strong>AI, web development,</strong> and <strong>data analytics</strong>.
+          Turning ideas into real applications — one project at a time.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="exploreBtn">
+            <i class="fas fa-rocket"></i> Explore My Projects
+          </a>
+          <a href="assets/resume/resume.pdf" class="btn btn-outline" id="resumeBtn" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer" class="github-badge">
+          <i class="fab fa-github"></i>
+          <span>github.com/sonamsingh7388</span>
+        </a>
+      </div>
+      <div class="hero-photo-wrapper">
+        <div class="photo-glow-ring">
+          <div class="photo-container">
+            <img src="assets/images/sonam.jpeg" alt="Sonam Singh — B.Tech CSE Data Science student"
+              class="profile-photo" id="profilePhoto" />
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+        <div class="floating-badge badge-2"><i class="fas fa-database"></i> SQL</div>
+        <div class="floating-badge badge-3"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="floating-badge badge-4"><i class="fas fa-chart-bar"></i> Data</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll down</span>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-block glass-card">
+          <p>
+            I'm <strong>Sonam Singh</strong>, a B.Tech student in <strong>Computer Science and Engineering (Data
+              Science)</strong>
+            at Goel Institute of Technology &amp; Management, Lucknow. Before my B.Tech, I completed a
+            <strong>Diploma in Information Technology</strong>, which gave me a solid foundation in core computing
+            concepts.
+          </p>
+          <p>
+            I'm genuinely curious about how technology can solve real problems. Whether it's building an AI-powered
+            tax analysis tool, designing a resume analyzer, or exploring data patterns — I enjoy the full process of
+            turning a rough idea into a working project.
+          </p>
+          <p>
+            Right now, I'm deepening my skills in <strong>web development, data analytics, and AI</strong> through
+            hands-on projects and self-study. I'm actively looking for <strong>internship opportunities</strong> where
+            I can contribute, learn from experienced developers, and grow as a professional.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>B.Tech CSE (Data Science)</strong>
+                <span>Expected 2028</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Lucknow, India</strong>
+                <span>Open to remote/hybrid internships</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-lightbulb"></i>
+              <div>
+                <strong>Currently Learning</strong>
+                <span>Power BI, advanced Python, ML basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards-column">
+          <div class="stat-card glass-card">
+            <i class="fas fa-code"></i>
+            <h3>3+</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat-card glass-card">
+            <i class="fab fa-github"></i>
+            <h3>Active</h3>
+            <p>GitHub Contributor</p>
+          </div>
+          <div class="stat-card glass-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>2 Months</h3>
+            <p>Industry Training</p>
+          </div>
+          <div class="stat-card glass-card">
+            <i class="fas fa-rocket"></i>
+            <h3>Seeking</h3>
+            <p>Internship Opportunities</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-group-title"><i class="fas fa-check-circle"></i> Current Skills</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon html-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <p>Semantic markup, accessible structure, responsive layouts</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon css-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <p>Flexbox, Grid, animations, responsive design</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon js-icon"><i class="fab fa-js-square"></i></div>
+            <h4>JavaScript</h4>
+            <p>DOM manipulation, event handling, interactive UIs</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon py-icon"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <p>Scripting, basic data handling, automation (growing)</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon java-icon"><i class="fab fa-java"></i></div>
+            <h4>Java</h4>
+            <p>OOP fundamentals, basic programming concepts</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon db-icon"><i class="fas fa-database"></i></div>
+            <h4>SQL &amp; Databases</h4>
+            <p>Basic queries, relational database concepts</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon st-icon"><i class="fas fa-stream"></i></div>
+            <h4>Streamlit</h4>
+            <p>Building and deploying Python web apps</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon git-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git &amp; GitHub</h4>
+            <p>Version control, repositories, collaboration basics</p>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon da-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Data Analytics</h4>
+            <p>Fundamentals of data analysis and visualization</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-group" style="margin-top:3rem;">
+        <h3 class="skills-group-title learning"><i class="fas fa-book-open"></i> Currently Learning</h3>
+        <div class="skills-grid learning-grid">
+
+          <div class="skill-card glass-card learning-card">
+            <div class="skill-icon pbi-icon"><i class="fas fa-chart-pie"></i></div>
+            <h4>Power BI</h4>
+            <p>Interactive dashboards and business intelligence reports</p>
+            <span class="learning-badge">In Progress</span>
+          </div>
+
+          <div class="skill-card glass-card learning-card">
+            <div class="skill-icon ml-icon"><i class="fas fa-brain"></i></div>
+            <h4>Machine Learning Basics</h4>
+            <p>Exploring ML concepts and algorithms</p>
+            <span class="learning-badge">In Progress</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="section-underline"></div>
+        <p class="section-subtitle">Hands-on projects I've built while learning and growing as a developer.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card" id="project1">
+          <div class="project-img-wrapper">
+            <div class="project-illustration p1-bg">
+              <i class="fas fa-chart-line project-icon"></i>
+              <div class="project-overlay">
+                <span>AI · Tax · Analytics</span>
+              </div>
+            </div>
+            <div class="project-number">01</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI-Based Income &amp; Tax Analysis System</h3>
+            <p class="project-desc">
+              An AI-powered application that analyzes income and tax data to provide meaningful insights.
+              Built with a data-driven approach to simplify tax calculations and financial understanding.
+              <!-- TODO: Add your actual feature descriptions here -->
+            </p>
+            <div class="tech-stack">
+              <!-- TODO: Update with your actual tech stack -->
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Data Analytics</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer"
+                class="btn-project btn-github" id="p1-github">
+                <!-- TODO: Replace href with actual repo URL e.g. https://github.com/sonamsingh7388/your-repo-name -->
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn-project btn-demo" id="p1-demo">
+                <!-- TODO: Replace href with your actual Streamlit live demo URL -->
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card" id="project2">
+          <div class="project-img-wrapper">
+            <div class="project-illustration p2-bg">
+              <i class="fas fa-file-alt project-icon"></i>
+              <div class="project-overlay">
+                <span>HTML · CSS · JS · Gemini</span>
+              </div>
+            </div>
+            <div class="project-number">02</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Resume Analyzer</h3>
+            <p class="project-desc">
+              A web-based resume analysis tool that uses Google Gemini AI to parse and evaluate resume content.
+              Helps users understand the strengths of their resume and identify areas for improvement.
+              <!-- TODO: Add more specific feature descriptions -->
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Google Gemini</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer"
+                class="btn-project btn-github" id="p2-github">
+                <!-- TODO: Replace href with actual repo URL -->
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn-project btn-demo" id="p2-demo">
+                <!-- TODO: Replace href with your actual live demo URL -->
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 — Fully Editable -->
+        <div class="project-card glass-card" id="project3">
+          <div class="project-img-wrapper">
+            <div class="project-illustration p3-bg">
+              <i class="fas fa-laptop-code project-icon"></i>
+              <div class="project-overlay">
+                <span>Your Tech Stack Here</span>
+              </div>
+            </div>
+            <div class="project-number">03</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">
+              <!-- TODO: Replace this with your actual project title -->
+              Your Third Project Title
+            </h3>
+            <p class="project-desc">
+              <!-- TODO: Write a short description of your third project here -->
+              Add a brief description of what this project does, the problem it solves, and what you learned while
+              building it.
+            </p>
+            <div class="tech-stack">
+              <!-- TODO: Add your actual tech tags below -->
+              <span class="tech-tag todo-tag">Tech 1</span>
+              <span class="tech-tag todo-tag">Tech 2</span>
+              <span class="tech-tag todo-tag">Tech 3</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer"
+                class="btn-project btn-github" id="p3-github">
+                <!-- TODO: Replace href with actual repo URL -->
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn-project btn-demo" id="p3-demo">
+                <!-- TODO: Replace href with your actual live demo URL -->
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My academic journey</span>
+        <h2 class="section-title">Edu<span class="highlight">cation</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-badge current">Current</span>
+              <h3>B.Tech — Computer Science &amp; Engineering (Data Science)</h3>
+              <h4><i class="fas fa-building"></i> Goel Institute of Technology &amp; Management, Lucknow</h4>
+              <p class="timeline-period"><i class="far fa-calendar-alt"></i> 2024 – 2028 (Expected)</p>
+              <p class="timeline-desc">
+                Pursuing a B.Tech with specialization in Data Science. Coursework covers programming fundamentals,
+                data structures, database management, machine learning concepts, and software engineering principles.
+                Actively building projects alongside academics to apply theoretical knowledge practically.
+              </p>
+              <div class="timeline-tags">
+                <span>Data Science</span>
+                <span>Software Engineering</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot completed"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-icon"><i class="fas fa-diploma"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-badge completed-badge">Completed</span>
+              <h3>Diploma — Information Technology</h3>
+              <h4><i class="fas fa-building"></i> Completed in 2025</h4>
+              <p class="timeline-period"><i class="far fa-calendar-alt"></i> Completed: 2025</p>
+              <p class="timeline-desc">
+                Completed a Diploma in Information Technology that covered fundamental computing concepts,
+                programming basics, networking, and IT infrastructure. This qualification provided the
+                groundwork for transitioning into B.Tech CSE.
+              </p>
+              <div class="timeline-tags">
+                <span>Information Technology</span>
+                <span>Programming Basics</span>
+                <span>Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRAINING ===================== -->
+  <section class="section training-section" id="training">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Industry experience</span>
+        <h2 class="section-title">Training &amp; <span class="highlight">Internship</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="training-card glass-card">
+        <div class="training-header">
+          <div class="training-company-logo">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="training-meta">
+            <h3>Summer Training Intern</h3>
+            <h4>Techpile Technology Pvt. Ltd.</h4>
+            <span class="training-duration"><i class="far fa-clock"></i> 2 Months Summer Training</span>
+          </div>
+          <span class="training-badge-pill">Completed</span>
+        </div>
+        <div class="training-body">
+          <p>
+            Completed a two-month summer training program at <strong>Techpile Technology Pvt. Ltd.</strong>,
+            gaining hands-on exposure to web development technologies and software development practices
+            in a real-world professional environment.
+          </p>
+          <div class="training-topics">
+            <h5><i class="fas fa-tools"></i> Topics Covered During Training:</h5>
+            <div class="training-tags-grid">
+              <div class="training-tag"><i class="fab fa-python"></i> Python</div>
+              <div class="training-tag"><i class="fas fa-server"></i> Django (Basics)</div>
+              <div class="training-tag"><i class="fab fa-html5"></i> HTML</div>
+              <div class="training-tag"><i class="fab fa-css3-alt"></i> CSS</div>
+              <div class="training-tag"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+              <div class="training-tag"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="training-tag"><i class="fas fa-database"></i> Database Fundamentals</div>
+            </div>
+          </div>
+          <div class="training-highlight">
+            <i class="fas fa-star"></i>
+            <span>
+              This training gave me practical exposure to building web applications and working in a structured
+              development environment, reinforcing concepts I'd studied academically.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GITHUB ===================== -->
+  <section class="section github-section" id="github">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Open source</span>
+        <h2 class="section-title">GitHub <span class="highlight">Profile</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="github-showcase glass-card">
+        <div class="github-profile-row">
+          <div class="github-avatar">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="github-info">
+            <h3>sonamsingh7388</h3>
+            <p>B.Tech CSE (Data Science) Student · Building projects and learning in public</p>
+            <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary github-visit-btn">
+              <i class="fab fa-github"></i> Visit My GitHub Profile
+            </a>
+          </div>
+        </div>
+        <div class="github-projects-row">
+          <div class="github-repo-card">
+            <div class="repo-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>AI Income &amp; Tax Analysis</h4>
+            <p>AI-powered tax analysis system</p>
+            <div class="repo-tags"><span>Python</span><span>Streamlit</span></div>
+          </div>
+          <div class="github-repo-card">
+            <div class="repo-icon"><i class="fas fa-file-alt"></i></div>
+            <h4>Resume Analyzer</h4>
+            <p>Gemini AI powered resume parser</p>
+            <div class="repo-tags"><span>HTML</span><span>JS</span><span>Gemini</span></div>
+          </div>
+          <div class="github-repo-card add-card">
+            <div class="repo-icon"><i class="fas fa-plus"></i></div>
+            <h4>More Coming Soon</h4>
+            <p>Actively building and committing</p>
+            <div class="repo-tags"><span>🚀 Active</span></div>
+          </div>
+        </div>
+        <p class="github-note">
+          <i class="fas fa-info-circle"></i>
+          Visit my GitHub profile to explore actual repositories and commit history.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <div class="section-underline"></div>
+        <p class="section-subtitle">I'm open to internship opportunities, collaborations, and conversations about tech.
+          Reach out!</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info-block glass-card">
+          <h3>Let's Connect</h3>
+          <p>Whether you have an internship offer, a project collaboration, or just want to say hi — my inbox is open.
+          </p>
+          <div class="contact-links">
+            <div class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <!-- TODO: Replace with your actual email address -->
+                <a href="mailto:your.email@example.com" id="contactEmail">your.email@example.com</a>
+              </div>
+            </div>
+            <div class="contact-link-item">
+              <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <!-- TODO: Replace with your actual LinkedIn profile URL -->
+                <a href="https://www.linkedin.com/in/sonam-singh-200569323/" target="_blank" rel="noopener noreferrer"
+                  id="contactLinkedIn">your-linkedin-username</a>
+              </div>
+            </div>
+            <div class="contact-link-item">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer">sonamsingh7388</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-block glass-card">
+          <h3>Send a Message</h3>
+          <!-- NOTE: This form is frontend only. It does NOT currently send emails. -->
+          <!-- To make it functional, integrate Formspree, EmailJS, or a backend service. -->
+          <div class="form-notice">
+            <i class="fas fa-info-circle"></i>
+            <span>This form is a frontend demo. To send real emails, integrate a service like
+              <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a> or
+              <a href="https://www.emailjs.com" target="_blank" rel="noopener noreferrer">EmailJS</a>.
+            </span>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="formName">Your Name</label>
+              <input type="text" id="formName" name="name" placeholder="e.g. Rahul Sharma" required
+                autocomplete="name" />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Your Email</label>
+              <input type="email" id="formEmail" name="email" placeholder="e.g. rahul@example.com" required
+                autocomplete="email" />
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" rows="5" placeholder="Hi Sonam, I'd like to discuss..."
+                required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo footer-logo" href="#home">
+            <span class="logo-bracket">&lt;</span>Sonam<span class="logo-dot">/</span><span
+              class="logo-bracket">&gt;</span>
+          </a>
+          <p>B.Tech CSE (Data Science) student building real-world projects and exploring the world of technology.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/sonamsingh7388" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <!-- TODO: Replace with actual LinkedIn URL -->
+            <a href="https://www.linkedin.com/in/sonam-singh-200569323/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <!-- TODO: Replace with actual email -->
+            <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-projects">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="#project1">AI Tax Analysis System</a></li>
+            <li><a href="#project2">Resume Analyzer</a></li>
+            <li><a href="#project3">ElevateCV-AI-Resume-Analyzer
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Sonam Singh. All rights reserved.</p>
+        <p class="footer-made">Made with <i class="fas fa-heart" style="color:#a855f7"></i> using HTML, CSS &amp;
+          JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
