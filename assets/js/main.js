@@ -361,3 +361,81 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 })();
+
+
+/* ============================================================
+   11. PORTFOLIO CHAT ASSISTANT
+   ============================================================ */
+(function initChatAssistant() {
+  const widget = document.getElementById('chatWidget');
+  const panel = document.getElementById('chatPanel');
+  const launcher = document.getElementById('chatLauncher');
+  const closeButton = document.getElementById('chatClose');
+  const form = document.getElementById('chatForm');
+  const input = document.getElementById('chatInput');
+  const messages = document.getElementById('chatMessages');
+  if (!widget || !panel || !launcher || !closeButton || !form || !input || !messages) return;
+
+  function setOpen(open) {
+    panel.classList.toggle('open', open);
+    panel.setAttribute('aria-hidden', String(!open));
+    launcher.setAttribute('aria-expanded', String(open));
+    launcher.setAttribute('aria-label', open ? 'Close chat' : 'Open chat');
+    if (open) input.focus();
+    else launcher.focus();
+  }
+
+  function addMessage(text, sender) {
+    const message = document.createElement('div');
+    message.className = `chat-message ${sender}-message`;
+    message.textContent = text;
+    messages.appendChild(message);
+    messages.scrollTop = messages.scrollHeight;
+    return message;
+  }
+
+  function getReply(rawText) {
+    const text = rawText.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+    const has = (...words) => words.some(word => text.includes(word));
+
+    if (!text) return 'Please type a message and I’ll do my best to help.';
+    if (has('how are you', 'how r u', 'kaisi ho', 'kaise ho', 'kya haal')) return 'I’m doing well, thank you for asking! 😊 What would you like to know about Sonam’s portfolio?';
+    if (/\b(hello|hi|hey)\b/.test(text) || has('namaste', 'namaskar')) return 'Hi there! 👋 You can ask me about Sonam’s projects, skills, studies, or contact details.';
+    if (has('project', 'projects', 'work', 'portfolio')) return 'Sonam’s portfolio highlights an AI-based income and tax analysis system, a Resume Analyzer, and her web development work. Scroll to the Projects section to explore them.';
+    if (has('skill', 'skills', 'technology', 'tech stack', 'programming')) return 'Sonam works with HTML, CSS, JavaScript, Python, Java, SQL, Streamlit, Git, and GitHub. She is currently learning Power BI and machine learning basics.';
+    if (has('education', 'study', 'college', 'degree', 'university')) return 'Sonam is pursuing B.Tech in Computer Science and Engineering (Data Science) at Goel Institute of Technology & Management in Lucknow, expected to graduate in 2028. You can find more in the Education section.';
+    if (has('contact', 'email', 'linkedin', 'reach', 'hire', 'internship')) return 'Sonam is open to internship opportunities. Visit the Contact section near the bottom of this page to find her contact links and send a message.';
+    if (has('resume', 'cv')) return 'You can use the Download Resume button near the top of the page. The resume PDF needs to be added to the portfolio before the download will work.';
+    if (has('where', 'location', 'city', 'live')) return 'Sonam is based in Lucknow, India, and is open to remote or hybrid internship opportunities.';
+    if (has('thank', 'thanks', 'shukriya', 'dhanyavaad')) return 'You’re welcome! 😊 Is there anything else you’d like to know?';
+    if (has('who are you', 'your name', 'about you')) return 'I’m the portfolio chat assistant. I can answer questions about Sonam’s background, projects, skills, and ways to get in touch.';
+    return 'I can help with questions about Sonam’s projects, skills, education, location, resume, or contact details. What would you like to know?';
+  }
+
+  function sendMessage(text) {
+    const trimmed = text.trim();
+    if (!trimmed) return;
+    addMessage(trimmed, 'user');
+    input.value = '';
+    const typing = addMessage('Typing…', 'bot');
+    typing.setAttribute('aria-label', 'Assistant is typing');
+    window.setTimeout(() => {
+      typing.remove();
+      addMessage(getReply(trimmed), 'bot');
+    }, 450);
+  }
+
+  launcher.addEventListener('click', () => setOpen(!panel.classList.contains('open')));
+  closeButton.addEventListener('click', () => setOpen(false));
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    sendMessage(input.value);
+    input.focus();
+  });
+  widget.querySelectorAll('.chat-suggestion').forEach(button => {
+    button.addEventListener('click', () => sendMessage(button.textContent));
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && panel.classList.contains('open')) setOpen(false);
+  });
+})();
